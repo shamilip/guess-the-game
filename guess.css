@@ -1,0 +1,172 @@
+.hide {
+    visibility: hidden;
+}
+
+.main {
+    height: 600px;
+    width: 900px;
+    background: linear-gradient(to left, #ff512f, #dd2476);
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    box-shadow: 2px 2px 2px white;
+    background-image: url(https://img.freepik.com/free-psd/gamer-background-with-accessories_1419-2365.jpg?w=2000);
+}
+
+body {
+    background-color: #3f0f25;
+}
+
+@keyframes guess {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translatey(-10px);
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+    /* background-color: #3f0f25; */
+    color: white;
+    word-spacing: 10px;
+    animation: guess 3s infinite;
+    font-style: oblique;
+}
+
+#start {
+    height: 60px;
+    width: 100px;
+    font-size: 19px;
+    color: #3f0f25;
+    text-transform: capitalize;
+    background-color: #e3afbc;
+    box-shadow: #3f0f25;
+}
+
+#start:hover {
+    background-color: #dd2476;
+    color: #3f0f25;
+    box-shadow: 3px 3px 1px #25151c;
+}
+
+#clue-button {
+    height: 60px;
+    width: 100px;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 1px #25151c;
+    background-color: #e3afbc;
+}
+
+#clue-button:hover {
+    background-color: #3f0f25;
+    color: white;
+}
+
+#guess-number {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black
+}
+
+input {
+    width: 500px;
+    height: 50;
+    background-color: #e3afbc;
+    color: #3f0f25;
+    font-weight: 900;
+}
+
+#check {
+    height: 55px;
+    width: 100px;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-weight: 900;
+    box-shadow: 3px 3px 1px #3f0f25;
+    background-color: #e3afbc;
+}
+
+#check:hover {
+    background-color: #dd2476;
+}
+
+p {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+#answer {
+    color: rgb(232, 232, 217);
+    width: 400px;
+    height: 30px;
+    margin: auto;
+    font-size: 30px;
+}
+
+#final-answer {
+    color: rgb(232, 232, 217);
+    width: 400px;
+    height: 30px;
+    margin: auto;
+    font-size: 30px;
+
+}
+
+.clues {
+    color: white;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+
+@media screen and (max-widtg:480px) {
+    .main {
+        height: 100px;
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 18px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #guess-number {
+        font-size: 18px;
+    }
+
+    #answer {
+        font-size: 18px;
+        text-align: left;
+        margin-left: 45px;
+    }
+
+    #start {
+        height: 40px;
+        width: 80px;
+        font-size: 10px;
+    }
+
+    input {
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    #check {
+        height: 45px;
+        width: 90px;
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
